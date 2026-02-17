@@ -1,7 +1,13 @@
+import ProductList from "@/src/components/ProductList"
+import Image from "next/image"
+
 const Homepage =() =>{
   return (
     <div>
-      <h1 className="">Home page</h1>
+      <div className="relative aspect-3/1 mb-12">
+        <Image src="/hero.jpeg" alt="image" fill></Image>
+      </div>
+      <ProductList />
     </div>
   )
 }
